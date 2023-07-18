@@ -1,12 +1,4 @@
-interface SalaryCalculationResult {
-   basicSalary: number;
-   bonusAmount: number;
-   taxableAmount: number;
-   taxAmount: number;
-   netSalary: number;
-}
- 
-function calculateSalary(basicSalary: number, bonusPercentage: number, taxPercentage: number): SalaryCalculationResult {
+function calculateSalary(basicSalary, bonusPercentage, taxPercentage) {
    const bonusAmount = (basicSalary * bonusPercentage) / 100;
    const taxableAmount = basicSalary + bonusAmount;
    const taxAmount = (taxableAmount * taxPercentage) / 100;
@@ -20,6 +12,12 @@ function calculateSalary(basicSalary: number, bonusPercentage: number, taxPercen
       netSalary,
    };
 }
- 
-export default calculateSalary;
- 
+
+function calculateBonus(basicSalary, bonusPercentage) {
+   return (basicSalary * bonusPercentage) / 100;
+}
+
+module.exports = {
+   calculateSalary,
+   calculateBonus
+};
