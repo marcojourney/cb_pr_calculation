@@ -11,6 +11,7 @@ npm install cb_pr_calculation
 
 ## Usage
 
+```javascript
 const { calculateSalary, calculateBonus } = require('your-package-name');
 
 // Calculate salary
