@@ -75,7 +75,7 @@ console.log(bonusAmount);
 
 <h2>License</h2>
 
-<p>YourPackageName is open-source software licensed under the <a href="https://github.com/your-username/your-package-name/blob/main/LICENSE">MIT license</a>.</p>
+<p>cb_pr_calculation is open-source software licensed under the <a href="https://github.com/your-username/your-package-name/blob/main/LICENSE">MIT license</a</p>
 
 <h2>Contribution</h2>
 
