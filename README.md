@@ -7,12 +7,11 @@ A reusable npm package to calculate salary for companies in Cambodia.
 
 ## Installation
 
-```bash
 npm install cb_pr_calculation
 
-const { calculateSalary, calculateBonus } = require('your-package-name');
+## Usage
 
-Usage
+const { calculateSalary, calculateBonus } = require('your-package-name');
 
 // Calculate salary
 const salaryResult = calculateSalary(50000, 10, 20);
@@ -22,7 +21,8 @@ console.log(salaryResult.netSalary);
 const bonusAmount = calculateBonus(50000, 10);
 console.log(bonusAmount);
 
-API Reference
+
+## API Reference
 calculateSalary(basicSalary, bonusPercentage, taxPercentage)
 Calculate salary based on the provided basicSalary, bonusPercentage, and taxPercentage.
 
@@ -50,14 +50,15 @@ bonusPercentage (number): The bonus percentage to be applied to the basic salary
 Returns:
 
 number: The calculated bonus amount.
-License
+
+## License
 YourPackageName is open-source software licensed under the MIT license.
 
-Contribution
+## Contribution
 Contributions are welcome! If you find any issues or want to add new features, feel free to submit a pull request.
 
-Support
+## Support
 If you encounter any problems or have questions, please open an issue on GitHub.
 
-Acknowledgments
-Special thanks to Your Name for creating this amazing npm package.
+## Acknowledgments
+Special thanks to Sophanna M. for creating this amazing npm package.
