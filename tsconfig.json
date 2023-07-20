@@ -6,5 +6,9 @@
       "strict": true,
       "declaration": true
     },
+    "exclude": [
+      "node_modules",
+      "__tests__"
+    ],
     "include": ["src", "@types"]
 }

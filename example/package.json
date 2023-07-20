@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cb_pr_calculation": "^1.2.4"
+    "cb_pr_calculation": "^1.2.7"
   }
 }

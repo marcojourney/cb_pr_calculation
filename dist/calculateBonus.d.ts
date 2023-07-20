@@ -1,1 +1,1 @@
-export default function calculateBonus(basicSalary: number, bonusPercentage: number): number;
+export declare function calculateBonus(basicSalary: number, bonusPercentage: number): number;
