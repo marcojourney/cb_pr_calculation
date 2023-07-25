@@ -9,15 +9,35 @@ declare module "cb_pr_calculation" {
 	  netSalary: number;
 	}
  
-	// Export a function named "calculateSalary" that calculates the salary based on provided parameters.
-	// It takes basicSalary, bonusPercentage, and taxPercentage as input and returns a SalaryCalculationResult object.
+	/**
+	 * 
+	 * @param basicSalary 
+	 * @param bonusPercentage 
+	 * @param taxPercentage 
+	 */
 	export function calculateSalary(
 	  basicSalary: number,
 	  bonusPercentage: number,
 	  taxPercentage: number
 	): SalaryCalculationResult;
- 
-	// Export a function named "calculateBonus" that calculates the bonus amount based on provided parameters.
-	// It takes basicSalary and bonusPercentage as input and returns the calculated bonus amount as a number.
+	
+	/**
+	 * 
+	 * @param basicSalary 
+	 * @param workDayPerMonth
+	 */
+	export function calculateSalaryByHour(basicSalary: number, workDayPerMonth: number): number;
+
+	/**
+	 * 
+	 * @param basicSalary 
+	 * @param bonusPercentage 
+	 */
 	export function calculateBonus(basicSalary: number, bonusPercentage: number): number;
+
+	/**
+	 * 
+	 * @param basicSalary 
+	 */
+	export function calculate13thMonth(basicSalary: number): number;
 } 

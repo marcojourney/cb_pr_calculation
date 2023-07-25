@@ -13,4 +13,8 @@ export function calculateSalary(basicSalary: number, bonusPercentage: number, ta
      taxAmount,
      netSalary,
    };
- }
+}
+
+export function calculateSalaryByHour(basicSalary: number, workDayPerMonth: number): number {
+	return basicSalary / workDayPerMonth;
+}
