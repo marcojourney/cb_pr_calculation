@@ -1,6 +1,6 @@
 {
   "name": "cb_pr_calculation",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Cambodia Payroll Calculation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
