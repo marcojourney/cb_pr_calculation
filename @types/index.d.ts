@@ -1,12 +1,18 @@
 // Declare a module named "cb_pr_calculation".
 declare module "cb_pr_calculation" {
-	// Export an interface representing the result of salary calculation.
 	export interface SalaryCalculationResult {
 	  basicSalary: number;
 	  bonusAmount: number;
 	  taxableAmount: number;
 	  taxAmount: number;
 	  netSalary: number;
+	}
+
+	export interface EmployeeBenefit {
+		amount: number;
+		isTaxable: boolean;
+		offeredBy: "STAFF" | "ORGANIZATION";
+		taxRate: number;
 	}
  
 	/**

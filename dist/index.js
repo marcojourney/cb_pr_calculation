@@ -15,5 +15,5 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./salary"), exports);
-__exportStar(require("./allowance"), exports);
+__exportStar(require("./benefit"), exports);
 __exportStar(require("./13thmonth"), exports);

@@ -1,6 +1,6 @@
 {
   "name": "cb_pr_calculation",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Cambodia Payroll Calculation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,10 @@
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": ["dist", "example"],
+  "files": [
+    "dist",
+    "example"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phannamorn/cb_pr_calculation.git"
@@ -25,6 +28,10 @@
   },
   "homepage": "https://github.com/phannamorn/cb_pr_calculation#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.46.0",
+    "eslint-config-google": "^0.14.0",
     "typescript": "^5.1.6"
   }
 }

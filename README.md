@@ -7,12 +7,13 @@ A reusable npm package to calculate salary for companies in Cambodia.
 
 ## Installation
 
+```bash
 npm install cb_pr_calculation
-
+```
 <h2>Usage</h2>
 
-<pre>
-<code>const { calculateSalary, calculateBonus } = require('your-package-name');
+```javascript
+const { calculateSalary, calculateBonus } = require('your-package-name');
 
 // Calculate salary
 const salaryResult = calculateSalary(50000, 10, 20);
@@ -21,8 +22,8 @@ console.log(salaryResult.netSalary);
 // Calculate bonus
 const bonusAmount = calculateBonus(50000, 10);
 console.log(bonusAmount);
-</code>
-</pre>
+
+```
 
 <h2>API Reference</h2>
 
