@@ -4,11 +4,14 @@
       "module": "commonjs",
       "outDir": "dist",
       "strict": true,
-      "declaration": true
+      "declaration": true,
+      "paths": {
+        "@type/*": ["./@type/*"]
+      }
     },
     "exclude": [
       "node_modules",
-      "__tests__"
+      // "__tests__"
     ],
-    "include": ["src", "@types"]
+    "include": ["@types", "src", "test"]
 }

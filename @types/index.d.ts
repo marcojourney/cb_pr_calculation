@@ -14,6 +14,19 @@ declare module "cb_pr_calculation" {
 		offeredBy: "STAFF" | "ORGANIZATION";
 		taxRate: number;
 	}
+
+	export interface PensionFundRate {
+		from: number;
+		to: number;
+		rate: number;
+		round: number
+	}
+
+	export interface SalaryTaxRate {
+		from: number;
+		to: number;
+		rate: number;
+	}
  
 	/**
 	 * 
