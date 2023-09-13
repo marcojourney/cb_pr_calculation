@@ -65,11 +65,26 @@ function calculateNetSalary(taxableAmount: number, taxAmount: number): number {
 /**
  * Calculate the hourly salary based on the monthly basic salary and the number of workdays in a month.
  * @param {number} monthlyBasicSalary - The monthly basic salary of the employee.
+ * @param {number} monthlyBasicSalary - The monthly basic salary of the employee.
  * @param {number} workdaysPerMonth - The number of workdays in a month.
  * @returns {number} The calculated hourly salary.
  * @throws {Error} If the monthly basic salary or workdays per month are not valid (non-positive numbers).
  */
-export function calculateSalaryByHour(basicSalary: number, workdaysPerMonth: number): number {
+export function calculateSalaryByHour(basicSalary: number, workhoursPerDay: number, workdaysPerMonth: number): number {
+  if (basicSalary <= 0 || workdaysPerMonth <= 0) {
+    throw new Error("Monthly basic salary and workdays per month must be positive numbers.");
+  }
+	return basicSalary / workdaysPerMonth / workhoursPerDay;
+}
+
+/**
+ * Calculate the hourly salary based on the monthly basic salary and the number of workdays in a month.
+ * @param {number} monthlyBasicSalary - The monthly basic salary of the employee.
+ * @param {number} workdaysPerMonth - The number of workdays in a month.
+ * @returns {number} The calculated hourly salary.
+ * @throws {Error} If the monthly basic salary or workdays per month are not valid (non-positive numbers).
+ */
+ export function calculateSalaryByDay(basicSalary: number, workdaysPerMonth: number): number {
   if (basicSalary <= 0 || workdaysPerMonth <= 0) {
     throw new Error("Monthly basic salary and workdays per month must be positive numbers.");
   }

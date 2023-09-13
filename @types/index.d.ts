@@ -43,9 +43,24 @@ declare module "cb_pr_calculation" {
 	/**
 	 * 
 	 * @param basicSalary 
+	 * @param expectedWorkingDays 
+	 */
+	export function getNewEmployeeSalary(basicSalary: number, expectedWorkingDays: number): SalaryCalculationResult;
+	
+	/**
+	 * 
+	 * @param basicSalary 
+	 * @param workhoursPerDay 
 	 * @param workDayPerMonth
 	 */
-	export function calculateSalaryByHour(basicSalary: number, workDayPerMonth: number): number;
+	export function calculateSalaryByHour(basicSalary: number, workhoursPerDay: number, workDayPerMonth: number): number;
+	
+	/**
+	 * 
+	 * @param basicSalary 
+	 * @param workDayPerMonth 
+	 */
+	export function calculateSalaryByDay(basicSalary: number, workDayPerMonth: number): number;
 
 	/**
 	 * 
@@ -53,6 +68,13 @@ declare module "cb_pr_calculation" {
 	 * @param bonusPercentage 
 	 */
 	export function calculateBonus(basicSalary: number, bonusPercentage: number): number;
+	
+	/**
+	 * 
+	 * @param amount 
+	 * @param workDayPerMonth 
+	 */
+	export function getNewEmployeeBonus(amount: number, workDayPerMonth: number): number;
 
 	/**
 	 * 
